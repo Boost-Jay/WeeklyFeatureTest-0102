@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		555761402B4505DD00F8D476 /* PinningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5557613F2B4505DD00F8D476 /* PinningManager.swift */; };
+		555761422B4538D700F8D476 /* NetworkManagerSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555761412B4538D700F8D476 /* NetworkManagerSessionDelegate.swift */; };
 		7B7782E22B44212B000B24F5 /* WeeklyFeatureTest0102App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7782E12B44212B000B24F5 /* WeeklyFeatureTest0102App.swift */; };
 		7B7782E42B44212B000B24F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7782E32B44212B000B24F5 /* ContentView.swift */; };
 		7B7782E62B44212B000B24F5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7782E52B44212B000B24F5 /* Item.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5557613F2B4505DD00F8D476 /* PinningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinningManager.swift; sourceTree = "<group>"; };
+		555761412B4538D700F8D476 /* NetworkManagerSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerSessionDelegate.swift; sourceTree = "<group>"; };
 		7B7782DE2B44212B000B24F5 /* WeeklyFeatureTest0102.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeklyFeatureTest0102.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7782E12B44212B000B24F5 /* WeeklyFeatureTest0102App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyFeatureTest0102App.swift; sourceTree = "<group>"; };
 		7B7782E32B44212B000B24F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555761432B453A4F00F8D476 /* SSL-Pinning */ = {
+			isa = PBXGroup;
+			children = (
+				5557613F2B4505DD00F8D476 /* PinningManager.swift */,
+				555761412B4538D700F8D476 /* NetworkManagerSessionDelegate.swift */,
+			);
+			path = "SSL-Pinning";
+			sourceTree = "<group>";
+		};
+		555761442B454DE400F8D476 /* AlignmentGuide */ = {
+			isa = PBXGroup;
+			children = (
+				7B7782F12B44330A000B24F5 /* HorizontalAlignment-Demo.swift */,
+				7B7782F32B44334A000B24F5 /* VerticalAlignment-Demo.swift */,
+			);
+			path = AlignmentGuide;
+			sourceTree = "<group>";
+		};
 		7B7782D52B44212B000B24F5 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +81,8 @@
 			children = (
 				7B7782E12B44212B000B24F5 /* WeeklyFeatureTest0102App.swift */,
 				7B7782E32B44212B000B24F5 /* ContentView.swift */,
-				7B7782F12B44330A000B24F5 /* HorizontalAlignment-Demo.swift */,
-				7B7782F32B44334A000B24F5 /* VerticalAlignment-Demo.swift */,
+				555761432B453A4F00F8D476 /* SSL-Pinning */,
+				555761442B454DE400F8D476 /* AlignmentGuide */,
 				7B7782E52B44212B000B24F5 /* Item.swift */,
 				7B7782E72B44212F000B24F5 /* Assets.xcassets */,
 				7B7782E92B44212F000B24F5 /* Preview Content */,
@@ -146,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555761422B4538D700F8D476 /* NetworkManagerSessionDelegate.swift in Sources */,
 				7B7782F22B44330A000B24F5 /* HorizontalAlignment-Demo.swift in Sources */,
 				7B7782E42B44212B000B24F5 /* ContentView.swift in Sources */,
 				7B7782E62B44212B000B24F5 /* Item.swift in Sources */,
+				555761402B4505DD00F8D476 /* PinningManager.swift in Sources */,
 				7B7782F42B44334A000B24F5 /* VerticalAlignment-Demo.swift in Sources */,
 				7B7782E22B44212B000B24F5 /* WeeklyFeatureTest0102App.swift in Sources */,
 			);
@@ -292,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

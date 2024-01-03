@@ -39,6 +39,9 @@ struct HorizontalAlignment_Demo: View {
                             .alignmentGuide(.top, computeValue: { dimension in
                                 dimension[.top] - 40    // 已當前的Hstack為中心去做調整
                             })
+                            .alignmentGuide(.top) { dimension in
+                                dimension[.top] - 40    // 已當前的Hstack為中心去做調整
+                            }
                         Image(systemName: "circle.fill")
                     }
                     .font(.largeTitle)
