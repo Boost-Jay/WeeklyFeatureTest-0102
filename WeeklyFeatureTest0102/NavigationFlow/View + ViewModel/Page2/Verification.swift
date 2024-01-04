@@ -6,13 +6,42 @@
 //
 
 import SwiftUI
+import Combine
 
-struct Verification: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+final class VerificationVM: ObservableObject, Completeable, Navigable {
+    @Published var verification = ""
+    var phoneNumber: String
+
+    let didComplete = PassthroughSubject<VerificationVM, Never>()
+    
+    init(phoneNumber: String?) {
+        self.phoneNumber = phoneNumber ?? ""
+    }
+    
+    func didTapNext() {
+        //do some network calls etc
+        didComplete.send(self)
     }
 }
 
-#Preview {
-    Verification()
+
+struct Verification: View {
+    @StateObject var vm: VerificationVM
+
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("2: Verification sent to \(vm.phoneNumber)")
+            TextField("Verfication Number", text: $vm.verification)
+            Button(action: {
+                self.vm.didTapNext()
+            }, label: {
+                Text("Next")
+            })
+        }.padding()
+    }
+}
+
+#Preview() {
+    Verification(vm: VerificationVM(phoneNumber: nil))
 }

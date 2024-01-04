@@ -25,7 +25,7 @@ struct WeeklyFeatureTest0102App: App {
 
     var body: some Scene {
         WindowGroup {
-            VerticalAlignment_Demo()
+            FlowView(vm: FlowVM())
         }
         .modelContainer(sharedModelContainer)
     }

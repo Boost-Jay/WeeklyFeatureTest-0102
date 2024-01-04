@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+import Combine
 
-struct Final: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+final class FinalVM: ObservableObject, Completeable, Navigable {
+    let name: String
+
+    let didComplete = PassthroughSubject<FinalVM, Never>()
+    
+    init(name: String?) {
+        self.name = name ?? ""
+    }
+    
+    func didTapNext() {
+        //do some network calls etc
+        didComplete.send(self)
     }
 }
 
-#Preview {
-    Final()
+struct Final: View {
+    @StateObject var vm: FinalVM
+
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Welcome to the app, \(vm.name)")
+            Button(action: { self.vm.didTapNext() }, label: { Text("Next") })
+        }.padding()
+    }
 }
