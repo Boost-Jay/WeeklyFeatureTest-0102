@@ -7,3 +7,7 @@
 ## 01/03 ～ 01/04
    * 新增SSl pinning
 > https://medium.com/@otufekci/ios-ssl-pinning-with-public-key-8ebdc2d32a9f
+
+## 01/04
+   * `新增swiftUI` 內建 `Line Charts`
+> https://blog.stackademic.com/line-chart-using-swift-charts-swiftui-cd1abeac9e44
