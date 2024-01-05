@@ -13,3 +13,9 @@
 > https://blog.stackademic.com/line-chart-using-swift-charts-swiftui-cd1abeac9e44
    * 新增`Flow Navigation`
 > https://betterprogramming.pub/flow-navigation-with-swiftui-4-e006882c5efa
+
+## 01/05
+   * 新增單位轉換
+> https://medium.com/@jpmtech/swift-measurement-api-73521627b65c
+   * 新增`swift` 內建 `Bar Charts`
+> https://blog.stackademic.com/barchart-using-swift-charts-swiftui-5e1db8068b46

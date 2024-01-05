@@ -40,6 +40,7 @@ class FlowVM: ObservableObject {
     private let model: FlowModel
     var subscription = Set<AnyCancellable>()
     
+    
     @Published var navigationPath: [Screen] = []
     
     init() {

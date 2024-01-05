@@ -26,6 +26,9 @@
 		7B7783122B46D0F1000B24F5 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7783112B46D0F1000B24F5 /* FlowView.swift */; };
 		7B7783142B46D109000B24F5 /* FlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7783132B46D109000B24F5 /* FlowModel.swift */; };
 		7B7783212B46D2F2000B24F5 /* WeeklyFeatureTest0102Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7783202B46D2F2000B24F5 /* WeeklyFeatureTest0102Tests.swift */; };
+		7BC6608E2B46F464005F7CBC /* UnitConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6608D2B46F464005F7CBC /* UnitConvert.swift */; };
+		7BC660912B46F7DC005F7CBC /* UnitConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC660902B46F7DC005F7CBC /* UnitConvertView.swift */; };
+		7BC660932B47E41A005F7CBC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC660922B47E41A005F7CBC /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		7B7783132B46D109000B24F5 /* FlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModel.swift; sourceTree = "<group>"; };
 		7B77831E2B46D2F2000B24F5 /* WeeklyFeatureTest0102Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeeklyFeatureTest0102Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7783202B46D2F2000B24F5 /* WeeklyFeatureTest0102Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyFeatureTest0102Tests.swift; sourceTree = "<group>"; };
+		7BC6608D2B46F464005F7CBC /* UnitConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvert.swift; sourceTree = "<group>"; };
+		7BC660902B46F7DC005F7CBC /* UnitConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvertView.swift; sourceTree = "<group>"; };
+		7BC660922B47E41A005F7CBC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +128,8 @@
 				7B7782E12B44212B000B24F5 /* WeeklyFeatureTest0102App.swift */,
 				7B7782E52B44212B000B24F5 /* Item.swift */,
 				7B7782E32B44212B000B24F5 /* ContentView.swift */,
-				7B7782FE2B468860000B24F5 /* LineChart */,
+				7BC660952B47E43D005F7CBC /* Charts */,
+				7BC6608F2B46F46E005F7CBC /* UnitConvert */,
 				555761432B453A4F00F8D476 /* SSL-Pinning */,
 				555761442B454DE400F8D476 /* AlignmentGuide */,
 				7B7783162B46D157000B24F5 /* NavigationFlow */,
@@ -217,6 +224,32 @@
 				7B7783202B46D2F2000B24F5 /* WeeklyFeatureTest0102Tests.swift */,
 			);
 			path = WeeklyFeatureTest0102Tests;
+			sourceTree = "<group>";
+		};
+		7BC6608F2B46F46E005F7CBC /* UnitConvert */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6608D2B46F464005F7CBC /* UnitConvert.swift */,
+				7BC660902B46F7DC005F7CBC /* UnitConvertView.swift */,
+			);
+			path = UnitConvert;
+			sourceTree = "<group>";
+		};
+		7BC660942B47E42E005F7CBC /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				7BC660922B47E41A005F7CBC /* BarChartView.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		7BC660952B47E43D005F7CBC /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				7BC660942B47E42E005F7CBC /* BarChart */,
+				7B7782FE2B468860000B24F5 /* LineChart */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7783022B46CFAE000B24F5 /* Verification.swift in Sources */,
+				7BC660932B47E41A005F7CBC /* BarChartView.swift in Sources */,
 				555761422B4538D700F8D476 /* NetworkManagerSessionDelegate.swift in Sources */,
 				7B7783122B46D0F1000B24F5 /* FlowView.swift in Sources */,
 				7B7782F22B44330A000B24F5 /* HorizontalAlignment-Demo.swift in Sources */,
@@ -327,6 +361,8 @@
 				7B7782E42B44212B000B24F5 /* ContentView.swift in Sources */,
 				7B7782FD2B468849000B24F5 /* LineChartView.swift in Sources */,
 				7B7783142B46D109000B24F5 /* FlowModel.swift in Sources */,
+				7BC660912B46F7DC005F7CBC /* UnitConvertView.swift in Sources */,
+				7BC6608E2B46F464005F7CBC /* UnitConvert.swift in Sources */,
 				7B7783002B46CF7D000B24F5 /* Phone.swift in Sources */,
 				7B7783082B46CFFE000B24F5 /* Final.swift in Sources */,
 				7B7783102B46D0CE000B24F5 /* FlowVM.swift in Sources */,
