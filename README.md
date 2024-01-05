@@ -19,3 +19,6 @@
 > https://medium.com/@jpmtech/swift-measurement-api-73521627b65c
    * 新增`swift` 內建 `Bar Charts`
 > https://blog.stackademic.com/barchart-using-swift-charts-swiftui-5e1db8068b46
+   * 新增 `search bar`
+> https://medium.com/@jpmtech/how-to-add-search-to-your-swiftui-app-2d724bf72c16
+> https://medium.com/@jpmtech/make-and-parse-an-api-call-using-swiftui-32f970e2b067

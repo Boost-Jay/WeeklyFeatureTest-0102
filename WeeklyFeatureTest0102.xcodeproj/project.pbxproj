@@ -29,6 +29,7 @@
 		7BC6608E2B46F464005F7CBC /* UnitConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6608D2B46F464005F7CBC /* UnitConvert.swift */; };
 		7BC660912B46F7DC005F7CBC /* UnitConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC660902B46F7DC005F7CBC /* UnitConvertView.swift */; };
 		7BC660932B47E41A005F7CBC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC660922B47E41A005F7CBC /* BarChartView.swift */; };
+		7BC660972B481D86005F7CBC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC660962B481D86005F7CBC /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		7BC6608D2B46F464005F7CBC /* UnitConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvert.swift; sourceTree = "<group>"; };
 		7BC660902B46F7DC005F7CBC /* UnitConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvertView.swift; sourceTree = "<group>"; };
 		7BC660922B47E41A005F7CBC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		7BC660962B481D86005F7CBC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				7B7782E12B44212B000B24F5 /* WeeklyFeatureTest0102App.swift */,
 				7B7782E52B44212B000B24F5 /* Item.swift */,
 				7B7782E32B44212B000B24F5 /* ContentView.swift */,
+				7BC660962B481D86005F7CBC /* SearchView.swift */,
 				7BC660952B47E43D005F7CBC /* Charts */,
 				7BC6608F2B46F46E005F7CBC /* UnitConvert */,
 				555761432B453A4F00F8D476 /* SSL-Pinning */,
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC660972B481D86005F7CBC /* SearchView.swift in Sources */,
 				7B7783022B46CFAE000B24F5 /* Verification.swift in Sources */,
 				7BC660932B47E41A005F7CBC /* BarChartView.swift in Sources */,
 				555761422B4538D700F8D476 /* NetworkManagerSessionDelegate.swift in Sources */,
